@@ -1,0 +1,238 @@
+/* INTRO, FONT & DOCUMENT-WIDE DECLARATIONS */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Cinzel+Decorative&family=Forum&family=Fugaz+One&family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Koulen&family=Monoton&display=swap');
+
+*, *::before, *::after {
+  box-sizing: content-box;
+}
+
+* {
+  font-size: 32px;
+}
+
+html {
+  font-family: 'Geologica', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 60px 100px;
+}
+
+#header > h1 {
+  text-align: center;
+  font-size: 4em;
+}
+
+h1.futuristic {
+  background: url(assets/sq-cr.gif);
+  text-shadow: -0.075em 0.06em 0.025em turquoise;
+  outline: 20px dotted red;
+  border-radius: 10px;
+  font-family: 'Monoton', cursive;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  margin: 50px 50px;
+  animation: crazy-outline 1s ease-in 1s infinite reverse both;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+#hero img {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  height: auto;
+  width: 800px;
+  border: 10px inset navy;
+}
+
+#phrase {
+  font-family: 'Monoton', cursive;
+  font-size: 3em;
+  background-color: black;
+  padding: 100px 40px;
+  color: white;
+}
+
+nav, ul {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav {
+  font-family: inherit;
+  padding: initial;
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+ul {
+  border: 4px solid turquoise;
+  text-shadow: -0.025em -0.1em 0.2em white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(252, 0, 227);
+  background-color: rgb(28, 0, 26);
+  border-radius: 10px;
+}
+
+.rainbowCityLights {
+  animation: crazy 750ms linear 0s infinite alternate forwards;
+}
+
+#canvas {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+p.decor::before {
+  content: "pseudoelement magic ";
+}
+  
+p.decor::after {
+  content: " --> Nice!";
+}
+
+@keyframes crazy {
+  0%   {
+    color: red;
+  }
+  25% {
+    color: violet;
+  }
+  50%  {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes crazy-outline {
+  0%   {
+    outline: 20px dotted red;
+  }
+  25% {
+    outline: 20px dotted violet;
+  }
+  50%  {
+    outline: 20px dotted yellow;
+  
+  }
+  75% {
+    outline: 20px dotted green;
+
+  }
+  100% {
+    outline: 20px dotted blue;
+
+  }
+} 
+
+#button {
+  background: navy;
+  border: 2px solid rgb(1, 1, 51);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.typography {
+  font-family: 'Geologica', sans-serif;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.italic {
+  font-style: italic
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#celebration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-description {
+  padding: 10px 200px;
+  text-align: justify;
+}
+
+#product-hl {
+  display: flex;
+  margin: auto 70px;
+}
+
+#warning-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.img-container {
+  background-color: red;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning-sign {
+  background-color: red;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.address {
+  text-align: right;
+}
+
+#copyright {
+  background-color: darkslategray;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+
+
+
+
+
+
+
